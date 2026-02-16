@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 JOGO DA VELHA 🎮</h1>
+        
+        <div class="modos">
+            <label>Escolha o modo:</label>
+            <div class="botoes-modo">
+                <button class="btn-modo ativo" data-modo="pvp">Vs Jogador</button>
+                <button class="btn-modo" data-modo="bot">Vs Bot</button>
+            </div>
+        </div>
+
+        <div class="dificuldade" id="dificuldadeDiv" style="display: none;">
+            <label>Dificuldade do Bot:</label>
+            <div class="botoes-dificuldade">
+                <button class="btn-dif ativo" data-dif="facil">Fácil</button>
+                <button class="btn-dif" data-dif="normal">Normal</button>
+                <button class="btn-dif" data-dif="impossivel">Impossível</button>
+            </div>
+        </div>
+
+        <div class="info-jogo">
+            <p>Jogador Atual: <span id="jogadorAtual">X</span></p>
+            <p id="statusJogo"></p>
+        </div>
+
+        <div class="tabuleiro">
+            <div class="celula" data-index="0"></div>
+            <div class="celula" data-index="1"></div>
+            <div class="celula" data-index="2"></div>
+            <div class="celula" data-index="3"></div>
+            <div class="celula" data-index="4"></div>
+            <div class="celula" data-index="5"></div>
+            <div class="celula" data-index="6"></div>
+            <div class="celula" data-index="7"></div>
+            <div class="celula" data-index="8"></div>
+        </div>
+
+        <button class="btn-reset">🔄 Novo Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
